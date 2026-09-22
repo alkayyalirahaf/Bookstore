@@ -5,7 +5,7 @@ A web application created as part of the Web Development Bootcamp assignments. I
 ---
 
 ## 🔗 Live Demo
-- **Live URL:** []
+- **Live URL:** [https://alkayyalirahaf.github.io/Bookstore/]
 
 ---
 
