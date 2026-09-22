@@ -121,7 +121,43 @@ console.log(1==='1');//false
 // }
 
 //Q8
+// function swapCase(text){
+//     let result = ""
+
+//     for (let i = 0 ; i <text.length ; i++){
+
+//         let char = text[i];
+
+//         if(char===char.toUpperCase()){
+//             result += char.toLowerCase();
+
+//         }
+
+//         else { result += char.toUpperCase()}
+//     }
+// return result;
+// }
+// console.log(swapCase("orAnGe"));
+
 
 
 
 //Q9
+
+
+function toCamelCase(text){
+    let words = text.split(" ")
+    let result = "";
+
+    for(let i = 0;i<words.length;i++){
+        if(words[i].length>0){
+            result += words[i][0].toUpperCase()+words[i].slice(1);
+        }
+    }
+    return result;
+}
+console.log(toCamelCase("Coding Academy by Orange"));
+
+
+
+
