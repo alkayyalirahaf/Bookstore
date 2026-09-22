@@ -93,10 +93,11 @@ console.log(1==='1');//false
 //     case 8: console.log("eight");break;
 //     case 9: console.log("Nine");break;
 //     default: console.log("please Try Again ")
-    
+//  }
 
 
-// }
+
+//
 
 //Q7
 
