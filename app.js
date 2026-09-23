@@ -59,23 +59,10 @@ function displayGenres() {
 }
 
 
+// 
+let userData=collectUserData();
+userData=applyDiscount(userData);
+console.log(userData);
+addNewGenre("history");
+displayGenres();
 
-
-
-
-// let text = "";
-// if(memberShipType === "student"){
-//     text="sholar";
-// }
-// else if(memberShipType==="regular"){
-//     text = "member";
-
-// }else{text="";}
-
-// alert("welcome, "+userName +" "+ text);
-
-
-
-// for(let i = 0 ; i<userData.length ; i++){
-//     console.log(userData[i]);
-// }
