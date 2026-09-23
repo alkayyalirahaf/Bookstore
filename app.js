@@ -30,10 +30,19 @@ return userData;
 
 
 
-// 
+// Initialize an Inventory Array
 let availableGenres=["Fiction","Science","History","Biography"];
 
+//
+function applyDiscount(userData){
+    if (userData[1]==="student"){
+        userData.push("20% Discount");
 
+    }else if (userData[1] === "regular"){
+        userData.push("No Discount");
+    }
+    return userData;
+}
 
 
 // let text = "";
