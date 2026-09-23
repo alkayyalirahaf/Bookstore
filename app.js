@@ -50,6 +50,19 @@ function addNewGenre(genre){
     availableGenres.push(genre);
 }
 
+
+function displayGenres() {
+    for(let i =0; i <availableGenres.length;i++)
+    {
+        console.log("- We offer: " +availableGenres[i]);
+    }
+}
+
+
+
+
+
+
 // let text = "";
 // if(memberShipType === "student"){
 //     text="sholar";
