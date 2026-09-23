@@ -160,5 +160,41 @@ function toCamelCase(text){
 console.log(toCamelCase("Coding Academy by Orange"));
 
 
+//Exercises:javascript2 
+//Q7
+// for (let i = 0;i<=5;i++){
+//     alert(i);
+// }
+
+//Q8
+// let n="";
+// for (let i = 0;i<=5;i++){
+//      n = n + i + " ";
+   
+// }
+// alert(n);
+
+//Q9
+// for(i=0;i<=20;i++){
+//     if(i%3==0){
+//         console.log(i);
+//     }
+// }
 
 
+//Q10
+// let number=prompt("enter number between 0 and 100");
+// while (true)
+// {
+// if (number>=0 && number <=100){
+//     alert(number);
+//     break;
+// }
+// else{
+//     number=prompt("enter number between 0 and 100")
+// }
+// }
+
+
+
+    
