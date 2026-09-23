@@ -45,6 +45,11 @@ function applyDiscount(userData){
 }
 
 
+//
+function addNewGenre(genre){
+    availableGenres.push(genre);
+}
+
 // let text = "";
 // if(memberShipType === "student"){
 //     text="sholar";
