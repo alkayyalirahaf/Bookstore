@@ -219,10 +219,22 @@ console.log(toCamelCase("Coding Academy by Orange"));
 // }
 
     
-//Q12
+// Q12
+// let number=Number(prompt("enter number "));
+// let result=0;
+// for(let i=0;i<=number;i++){
+// result +=i;
+// }
+// alert(result);
+
+//Q13
+
+// Q12
 let number=Number(prompt("enter number "));
 let result=0;
 for(let i=0;i<=number;i++){
 result +=i;
 }
-alert(result);
+let average = result/(number+1)
+alert(average);
+
