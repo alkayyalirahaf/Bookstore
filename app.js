@@ -30,20 +30,25 @@ return userData;
 
 
 
-
-let text = "";
-if(memberShipType === "student"){
-    text="sholar";
-}
-else if(memberShipType==="regular"){
-    text = "member";
-
-}else{text="";}
-
-alert("welcome, "+userName +" "+ text);
+// 
+let availableGenres=["Fiction","Science","History","Biography"];
 
 
 
-for(let i = 0 ; i<userData.length ; i++){
-    console.log(userData[i]);
-}
+
+// let text = "";
+// if(memberShipType === "student"){
+//     text="sholar";
+// }
+// else if(memberShipType==="regular"){
+//     text = "member";
+
+// }else{text="";}
+
+// alert("welcome, "+userName +" "+ text);
+
+
+
+// for(let i = 0 ; i<userData.length ; i++){
+//     console.log(userData[i]);
+// }
