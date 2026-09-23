@@ -1,4 +1,5 @@
-// let userName = prompt("enter your name");
+// asking for username
+let userName = prompt("enter your name");
 
 let memberShipType = prompt("enter your membership type (student/regular):");
 
@@ -14,21 +15,28 @@ if(memberShipType === "student" || memberShipType === "regular"){
 };
 
 
-// let text = "";
-// if(memberShipType === "student"){
-//     text="sholar";
-// }
-// else if(memberShipType==="regular"){
-//     text = "member";
+let text = "";
+if(memberShipType === "student"){
+    text="sholar";
+}
+else if(memberShipType==="regular"){
+    text = "member";
 
-// }else{text="";}
+}else{text="";}
 
-// alert("welcome, "+userName +" "+ text);
+alert("welcome, "+userName +" "+ text);
 
 
-// let book=prompt("Do you prefer fiction or non-fiction book genre?")
-// let bookTitle = prompt("Please write the specific title of the book you want to borrow");
 
-// alert("Your requested book "+ bookTitle +"is being reserved.").
+//asking fot book genre and title
 
-// console.log(userName + "ordered: "+ bookTitle);
+let book=prompt("Do you prefer fiction or non-fiction book genre?")
+let bookTitle = prompt("Please write the specific title of the book you want to borrow");
+
+// save answers in an array
+
+let userData = [userName,memberShipType,book,bookTitle];
+
+for(let i = 0 ; i<userData.length ; i++){
+    console.log(userData[i]);
+}
