@@ -202,20 +202,27 @@ console.log(toCamelCase("Coding Academy by Orange"));
 
 
 
-let number=prompt("enter number between 0 and 100");
-while (true)
-{
-    if(isNaN(number)==true){
-        number=prompt("enter number ");
-        continue;
-    }
-if (number>=0 && number <=100){
-    alert(number);
-    break;
-}
-else{
-    number=prompt("enter number between 0 and 100")
-}
-}
+// let number=prompt("enter number between 0 and 100");
+// while (true)
+// {
+//     if(isNaN(number)==true){
+//         number=prompt("enter number ");
+//         continue;
+//     }
+// if (number>=0 && number <=100){
+//     alert(number);
+//     break;
+// }
+// else{
+//     number=prompt("enter number between 0 and 100")
+// }
+// }
 
     
+//Q12
+let number=Number(prompt("enter number "));
+let result=0;
+for(let i=0;i<=number;i++){
+result +=i;
+}
+alert(result);
