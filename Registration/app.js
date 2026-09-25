@@ -1,7 +1,7 @@
 
 
 //Select
-// const form  = document.querySelector("form");
+
 const userNameInput=document.getElementById("userName");
 const passwordInput=document.getElementById("password");
 const confirmPasswordInput=document.getElementById("confirmPassword");
@@ -33,6 +33,8 @@ registerBtn.addEventListener("click",(e) =>{
         const error = document.createElement("span");
         error.textContent="user name is required";
         userNameInput.after(error);
+        
+
     }
 
 
@@ -54,14 +56,15 @@ if(passwordInput.value !== confirmPasswordInput.value){
     const error = document.createElement("span");
     error.textContent="Password and Confirm Password should match"
     confirmPasswordInput.after(error);
+}else{alert("successful user registration");
 }
+
 
 })
 
 
 
-//disable button 
-
+//Enable register button when all inputs are valid
 
 userNameInput.addEventListener("keyup",checkInputs);
 passwordInput.addEventListener("keyup",checkInputs);
@@ -78,5 +81,29 @@ function checkInputs () {
         else{
             registerBtn.disabled=true;
         }
+
+
     
 }
+
+
+//Add a required validation to each input 
+
+function validateInput(input){
+
+
+const error = document.createElement("span");
+error.textContent="required";
+
+input.addEventListener("input",()=>{
+
+if(input.value === ""){
+    input.after(error);
+}else{error.remove();}
+
+})
+}
+
+validateInput(userNameInput);
+validateInput(passwordInput);
+validateInput(confirmPasswordInput);
