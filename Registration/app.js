@@ -7,6 +7,7 @@ const passwordInput=document.getElementById("password");
 const confirmPasswordInput=document.getElementById("confirmPassword");
 const registerBtn=document.getElementById("regBtn");
 
+const inputs = document.getElementsByClassName("required");
 //create
 const userNameLabel=document.createElement("label");
 const passwordLabel=document.createElement("label");
@@ -56,3 +57,26 @@ if(passwordInput.value !== confirmPasswordInput.value){
 }
 
 })
+
+
+
+//disable button 
+
+
+userNameInput.addEventListener("keyup",checkInputs);
+passwordInput.addEventListener("keyup",checkInputs);
+confirmPasswordInput.addEventListener("keyup",checkInputs);
+
+
+
+
+function checkInputs () {
+
+   
+    if (userNameInput.value !== "" && passwordInput.value !== "" && confirmPasswordInput.value !==""){
+        registerBtn.disabled=false;}
+        else{
+            registerBtn.disabled=true;
+        }
+    
+}
