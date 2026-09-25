@@ -1,22 +1,9 @@
-let userName = prompt("enter your name");
-let memberShipType = prompt("enter your membership type (student/regular):");
+const submitBtn = document.getElementById("submitBtn");
 
 
-let text = ""
-if(memberShipType === "student"){
-    text="sholar";
-}
-else if(memberShipType==="regular"){
-    text = "member";
 
-}else{text="";}
+submitBtn.addEventListener("click", (event) => {
+    event.preventDefault();
 
-alert("welcome, "+userName +" "+ text);
-
-
-let book=prompt("Do you prefer fiction or non-fiction book genre?")
-let bookTitle = prompt("Please write the specific title of the book you want to borrow");
-
-alert("Your requested book "+ bookTitle +"is being reserved.").
-
-console.log(userName + "ordered: "+ bookTitle);
+    console.log("Button clicked");
+});
