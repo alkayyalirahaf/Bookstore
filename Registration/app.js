@@ -48,6 +48,11 @@ registerBtn.addEventListener("click",(e) =>{
         confirmPasswordInput.after(error);
     }
 
-
+// check if the user input in the password and confirm password inputs match
+if(passwordInput.value !== confirmPasswordInput.value){
+    const error = document.createElement("span");
+    error.textContent="Password and Confirm Password should match"
+    confirmPasswordInput.after(error);
+}
 
 })
