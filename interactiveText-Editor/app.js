@@ -8,6 +8,9 @@ const upperBtn = document.getElementById("upperBtn");
 const lowerBtn = document.getElementById("lowerBtn");
 const capitalizeBtn = document.getElementById("capitalizeBtn");
 const clearBtn = document.getElementById("clearBtn");
+const textColor=document.getElementById("textColor");
+const background=document.getElementById("background");
+
 
 
 boldBtn.addEventListener("click", () => {
@@ -81,4 +84,19 @@ clearBtn.addEventListener("click",() => {
     textDisplay.textContent="";
 
 
+});
+
+
+//text color
+
+textColor.addEventListener("input" , ()=>{
+textDisplay.style.color = textColor.value;
+
+
+});
+
+//background-color
+
+background.addEventListener("input",()=>{
+    textDisplay.style.backgroundColor=background.value;
 });
