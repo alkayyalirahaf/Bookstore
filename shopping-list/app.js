@@ -13,6 +13,10 @@ const listItem = document.createElement("li");
 listItem.textContent=item;
 shoppingList.appendChild(listItem);
 
+//Clear and focus input after adding item
+userInput.value="";
+userInput.focus();
+
 // adding delete button
 const delBtn = document.createElement("button");
 delBtn.textContent="Delete";
