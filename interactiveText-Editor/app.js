@@ -11,6 +11,9 @@ const clearBtn = document.getElementById("clearBtn");
 const textColor=document.getElementById("textColor");
 const background=document.getElementById("background");
 
+const fontSize=document.getElementById("fontSize");
+const fontFamily=document.getElementById("fontFamily");
+
 
 
 boldBtn.addEventListener("click", () => {
@@ -99,4 +102,18 @@ textDisplay.style.color = textColor.value;
 
 background.addEventListener("input",()=>{
     textDisplay.style.backgroundColor=background.value;
+});
+
+
+//Font Options
+fontSize.addEventListener("input",()=>{
+textDisplay.style.fontSize=fontSize.value +"px";
+
+});
+
+
+//font-family
+fontFamily.addEventListener("change",()=>{
+
+    textDisplay.style.fontFamily=fontFamily.value;
 });
