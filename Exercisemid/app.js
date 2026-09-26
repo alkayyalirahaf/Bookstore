@@ -1,8 +1,10 @@
 const paragraph = document.getElementById("paragraph");
 const text=paragraph.textContent;
-const words = text.split(" ");
+
+
 
 //Highlight words longer than 8 characters
+const words = text.split(" ");
 for(let i =0;i<words.length;i++){
     if(words[i].length>8){
             words[i] = '<span style="background-color: yellow;">' + words[i] + '</span>';
@@ -10,7 +12,7 @@ for(let i =0;i<words.length;i++){
 
     }
 }
-paragraph.innerHTML = words.join(" ");
+const textHighlighted = words.join(" ");
 
 
 //Add source link after paragraph
@@ -19,3 +21,14 @@ link.textContent="https://google.com/";
 link.href="https://google.com/";
 link.target="_blank";
 paragraph.after(link);
+
+
+
+//Split each new sentence on to a separate line 
+const sentence =  textHighlighted.split(".");
+
+for (let i = 0;i<sentence.length-1;i++){
+    sentence[i]=sentence[i]+'.<br>';
+}
+paragraph.innerHTML=sentence.join(" ");
+
