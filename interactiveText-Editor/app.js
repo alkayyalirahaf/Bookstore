@@ -4,8 +4,14 @@ const italicBtn = document.getElementById("italicBtn");
 const leftBtn = document.getElementById("leftBtn");
 const centerBtn = document.getElementById("centerBtn");
 const rightBtn = document.getElementById("rightBtn");
-boldBtn.addEventListener("click", () => {
+const upperBtn = document.getElementById("upperBtn");
+const lowerBtn = document.getElementById("lowerBtn");
+const capitalizeBtn = document.getElementById("capitalizeBtn");
+const clearBtn = document.getElementById("clearBtn");
 
+
+boldBtn.addEventListener("click", () => {
+    //text formatting 
     if (textDisplay.style.fontWeight === "bold") {
     textDisplay.style.fontWeight = "normal";
 } else {
@@ -24,6 +30,8 @@ italicBtn.addEventListener("click", () => {
 });
 
 
+
+//alignment controls
 leftBtn.addEventListener("click", () => {
     textDisplay.style.textAlign = "left";
 });
@@ -41,3 +49,36 @@ rightBtn.addEventListener("click", () => {
 });
 
 
+//Text Case & Clear Buttons
+
+upperBtn.addEventListener("click", () => {
+    textDisplay.textContent=textDisplay.textContent.toUpperCase();
+
+
+});
+
+
+lowerBtn.addEventListener("click", () => {
+    textDisplay.textContent=textDisplay.textContent.toLocaleLowerCase();
+
+
+});
+ 
+// Capitalize
+capitalizeBtn.addEventListener("click",() => {
+const words = textDisplay.textContent.toLowerCase().split(" ");
+for(let i = 0;i<words.length;i++){
+    words[i]=words[i][0].toUpperCase() + words[i].slice(1);
+
+}
+ textDisplay.textContent = words.join(" ");
+
+});
+
+//clear Text
+
+clearBtn.addEventListener("click",() => {
+    textDisplay.textContent="";
+
+
+});
