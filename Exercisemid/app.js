@@ -1,9 +1,10 @@
 const paragraph = document.getElementById("paragraph");
-const text=paragraph.textContent;
 
+const head=document.getElementById("head");
 
 
 //Highlight words longer than 8 characters
+const text=paragraph.textContent;
 const words = text.split(" ");
 for(let i =0;i<words.length;i++){
     if(words[i].length>8){
@@ -32,3 +33,15 @@ for (let i = 0;i<sentence.length-1;i++){
 }
 paragraph.innerHTML=sentence.join(" ");
 
+
+
+
+// count the words number
+
+
+const count=words.length;
+
+
+const result = document.createElement("span");
+result.textContent=count;
+head.after(result);
