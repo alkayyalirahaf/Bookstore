@@ -16,4 +16,6 @@ paragraph.innerHTML = words.join(" ");
 //Add source link after paragraph
 const link = document.createElement("a");
 link.textContent="https://google.com/";
-paragraph.appendChild(link);
+link.href="https://google.com/";
+link.target="_blank";
+paragraph.after(link);
