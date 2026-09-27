@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #textDisplay {
+
+            background-color: cyan;
+            color: darkred;
+            font-size: 47px;
+            font-family: Georgia;
+            text-align: center;
+            border: 3px solid black;
+            padding: 50px;
+            border-radius: 10px;
+            width: 600px;
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: white;
+            border: 2px solid gray;
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container button {
+            background-color: rgb(1, 1, 123);
+            color: white;
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: rgb(229, 226, 226);">
+
+    <h1 style="text-align: center;">Interactive Text Editor</h1>
+
+    <div id="textDisplay">HELLO</div>
+
+    <div class="container">
+
+        <button id="boldBtn">Bold</button>
+        <button id="italicBtn">Italic</button>
+
+        <button id="leftBtn">Left</button>
+        <button id="centerBtn">Center</button>
+        <button id="rightBtn">Right</button>
+
+        <br>
+
+        <button id="upperBtn">Upper Case</button>
+        <button id="lowerBtn">Lower Case</button>
+        <button id="capitalizeBtn">Capitalize</button>
+        <button id="clearBtn">Clear text</button>
+
+        <br>
+        <br>
+
+        <label for="textColor">Text-color: </label>
+        <input type="color" id="textColor" value="#600101">
+
+        <label for="background">Background: </label>
+        <input type="color" id="background" value="#00ffff">
+
+        <br>
+        <br>
+
+        <input type="number" id="fontSize" value="47">
+
+        <select id="fontFamily">
+            <option value="Georgia">Georgia</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+        </select>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
