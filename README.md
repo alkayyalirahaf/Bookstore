@@ -1,7 +1,7 @@
+
 # Bookstore & Reading Club
 
-A web application created as part of the Web Development Bootcamp assignments. It provides a simple interactive experience for a community bookstore, allowing users to register, pick categories, and reserve books.
-
+A web application created as part of the Web Development Bootcamp assignments. It includes interactive JavaScript exercises and a simple bookstore experience where users can register, choose book categories, and interact with different features. 
 ---
 
 ## 🔗 Live Demo
